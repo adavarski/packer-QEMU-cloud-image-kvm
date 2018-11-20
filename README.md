@@ -26,3 +26,9 @@ $ sudo apt install -y cloud-utils
 $ cloud-localds ./cloud.img ./cloud.cfg
 $ packer build template.json
 ```
+3. With qemu-nbd and scripts
+```
+Download xenial-server-cloudimg-amd64-disk1.img in .images/
+$ prep-ubuntu-cloud-image.sh
+$ packer build packer-build-image.json
+```

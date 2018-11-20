@@ -20,12 +20,14 @@ Build a OS image with Packer
 ```
 $ packer build template.json
 ```
+
 2.Without docker
 ```
 $ sudo apt install -y cloud-utils
 $ cloud-localds ./cloud.img ./cloud.cfg
 $ packer build template.json
 ```
+
 3. With qemu-nbd and scripts
 ```
 Download xenial-server-cloudimg-amd64-disk1.img in .images/
